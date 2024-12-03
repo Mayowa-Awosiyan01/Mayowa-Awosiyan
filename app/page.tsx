@@ -1,9 +1,13 @@
+import NavBar from "./components/navbar";
+
 export default function Home() {
   return (
     <div>
       <header className="text-4xl text-center font-bold p-8">
         Mayowa Awosiyan
       </header>
+      <NavBar />
+      <br></br>
       <div>
         <header>About Me</header>
         <p>
