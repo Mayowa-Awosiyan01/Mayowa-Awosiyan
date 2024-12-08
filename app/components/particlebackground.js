@@ -2,7 +2,9 @@
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-import particleConfig from "../config/particleConfig";
+//import particleConfig from "../config/particleConfig";
+import cascadeConfig from "../config/cascadeConfig";
+//import binaryConfig from "../config/binaryConfig";
 
 const ParticleBackground = () => {
   const particleInit = useCallback(async (engine) => {
@@ -20,7 +22,7 @@ const ParticleBackground = () => {
         id="particle-effects"
         particleLoaded="particlesLoaded"
         loaded={particlesLoaded}
-        options={particleConfig}
+        options={cascadeConfig}
         init={particleInit}
       />
     </div>

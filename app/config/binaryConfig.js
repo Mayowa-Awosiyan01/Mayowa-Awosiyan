@@ -173,10 +173,10 @@ const binaryConfig = {
         area: {
           gradient: {
             start: {
-              value: "#ffffff",
+              value: "#00ff00",
             },
             stop: {
-              value: "#000000",
+              value: "#00ff00",
             },
           },
           radius: 1000,
@@ -225,7 +225,7 @@ const binaryConfig = {
       animation: {
         h: {
           count: 0,
-          enable: true,
+          enable: false,
           speed: 50,
           decay: 0,
           delay: 0,
@@ -280,7 +280,7 @@ const binaryConfig = {
       },
       decay: 0,
       distance: {},
-      direction: "none",
+      direction: "bottom",
       drift: 0,
       enable: true,
       gravity: {
@@ -330,7 +330,7 @@ const binaryConfig = {
         mode: "delete",
         value: 0,
       },
-      value: 100,
+      value: 1000,
     },
     opacity: {
       value: {
@@ -368,15 +368,15 @@ const binaryConfig = {
       options: {},
       type: "char",
       character: {
-        value: ["1", "0"], // Array of characters
-        font: "Verdana", // Optional: specify a font
+        value: ["1", "0"], // Set to binary values
+        font: "Courier", // TODO get a more matrix like font
         style: "normal",
         weight: "bold",
       },
     },
     size: {
       value: {
-        min: 10,
+        min: 5,
         max: 10,
       },
       animation: {
