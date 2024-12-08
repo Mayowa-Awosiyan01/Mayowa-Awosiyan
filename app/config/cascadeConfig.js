@@ -499,6 +499,7 @@ const cascadeConfig = {
       blink: false,
       color: {
         value: "random", //color of all the links between nodes Can be set to the word random for RGB effect
+        //make it #random to remove links
       },
       consent: false,
       distance: 100,

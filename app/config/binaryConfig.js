@@ -503,7 +503,7 @@ const binaryConfig = {
     links: {
       blink: false,
       color: {
-        value: "#00ff00", //color of all the links between nodes Can be set to the word random for RGB effect
+        value: "#random", //color of all the links between nodes Can be set to the word random for RGB effect
       },
       consent: false,
       distance: 100,
