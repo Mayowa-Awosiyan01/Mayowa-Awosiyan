@@ -35,7 +35,7 @@ const particleConfig = {
     events: {
       onClick: {
         enable: true,
-        mode: "emitter",
+        mode: "push",
       },
       onDiv: {
         selectors: [""],
@@ -44,7 +44,7 @@ const particleConfig = {
         type: "circle",
       },
       onHover: {
-        enable: true,
+        enable: false,
         mode: "attract",
         parallax: {
           enable: false,
@@ -67,15 +67,15 @@ const particleConfig = {
             value: "#ff0000",
             animation: {
               enable: true,
-              speed: 400,
+              speed: 700,
               sync: true,
             },
           },
           collisions: {
-            enable: false,
+            enable: true,
           },
           links: {
-            enable: false,
+            enable: true,
           },
           move: {
             outModes: {
@@ -103,8 +103,8 @@ const particleConfig = {
         duration: 0.4,
         easing: "ease-out-quad",
         factor: 1,
-        maxSpeed: 50,
-        speed: 1,
+        maxSpeed: 100,
+        speed: 2,
       },
       bounce: {
         distance: 200,
@@ -123,7 +123,7 @@ const particleConfig = {
       connect: {
         distance: 80,
         links: {
-          opacity: 0.5,
+          opacity: 0.7,
         },
         radius: 60,
       },
@@ -221,7 +221,7 @@ const particleConfig = {
       },
     },
     color: {
-      value: "#fff",
+      value: "#00ff00",
       animation: {
         h: {
           count: 0,
@@ -362,6 +362,7 @@ const particleConfig = {
       },
     },
     shape: {
+      //possibly where to change to 1s and 0s
       close: true,
       fill: true,
       options: {},
@@ -496,7 +497,7 @@ const particleConfig = {
     links: {
       blink: false,
       color: {
-        value: "random",
+        value: "#00ff00", //color of all the links between nodes Can be set to the word random for RGB effect
       },
       consent: false,
       distance: 100,
