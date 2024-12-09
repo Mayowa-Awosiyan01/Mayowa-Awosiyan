@@ -1,7 +1,6 @@
 import Link from "next/link";
 
 export default function NavBar() {
-  console.log("NavBar is rendering");
   return (
     <div className="grid grid-rows-1 grid-cols-4 text-center p-4 font-bold">
       <div>

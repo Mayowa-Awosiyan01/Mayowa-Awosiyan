@@ -1,8 +1,10 @@
 import NavBar from "./components/navbar";
+import ParticleBackground from "./components/particlebackground";
 
 export default function Home() {
   return (
     <div>
+      <ParticleBackground />
       <NavBar />
       <header className="text-4xl text-center font-bold p-8">
         Mayowa Awosiyan
