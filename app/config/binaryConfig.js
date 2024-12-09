@@ -34,7 +34,7 @@ const binaryConfig = {
     detectsOn: "window",
     events: {
       onClick: {
-        enable: true,
+        enable: false,
         mode: "push",
       },
       onDiv: {
@@ -290,7 +290,7 @@ const binaryConfig = {
         maxSpeed: 50,
       },
       path: {
-        clamp: true,
+        clamp: false,
         delay: {
           value: 0,
         },
@@ -311,7 +311,7 @@ const binaryConfig = {
         acceleration: 0,
         enable: false,
       },
-      straight: false,
+      straight: true,
       trail: {
         enable: false,
         length: 10,
@@ -330,16 +330,16 @@ const binaryConfig = {
         mode: "delete",
         value: 0,
       },
-      value: 1000,
+      value: 300,
     },
     opacity: {
       value: {
-        min: 0.3,
+        min: 0.8,
         max: 0.8,
       },
       animation: {
         count: 0,
-        enable: true,
+        enable: false,
         speed: 0.5,
         decay: 0,
         delay: 0,
@@ -351,14 +351,15 @@ const binaryConfig = {
     },
     reduceDuplicates: false,
     shadow: {
-      blur: 0,
+      //this is where to go for more motion trail like effects
+      blur: 1,
       color: {
-        value: "#000",
+        value: "#00ff00",
       },
       enable: false,
       offset: {
         x: 0,
-        y: 0,
+        y: -15,
       },
     },
     shape: {
@@ -376,12 +377,12 @@ const binaryConfig = {
     },
     size: {
       value: {
-        min: 5,
-        max: 10,
+        min: 7,
+        max: 7,
       },
       animation: {
         count: 0,
-        enable: true,
+        enable: false,
         speed: 3,
         decay: 0,
         delay: 0,
@@ -503,11 +504,11 @@ const binaryConfig = {
     links: {
       blink: false,
       color: {
-        value: "#random", //color of all the links between nodes Can be set to the word random for RGB effect
+        value: "random", //color of all the links between nodes Can be set to the word random for RGB effect
       },
       consent: false,
       distance: 100,
-      enable: true,
+      enable: false,
       frequency: 1,
       opacity: 1,
       shadow: {
