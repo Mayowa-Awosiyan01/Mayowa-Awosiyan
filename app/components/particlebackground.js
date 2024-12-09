@@ -15,7 +15,7 @@ const ParticleBackground = () => {
   const particlesLoaded = useCallback(async (container) => {
     await console.log(container);
   }, []);
-
+  //TODO: Add function to use random config file on page reload
   return (
     <div id="particles-div">
       <Particles
