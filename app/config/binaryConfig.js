@@ -330,7 +330,7 @@ const binaryConfig = {
         mode: "delete",
         value: 0,
       },
-      value: 300,
+      value: 600,
     },
     opacity: {
       value: {
