@@ -1,11 +1,10 @@
-import NavBar from "./components/navbar";
 import ParticleBackground from "./components/particlebackground";
 
 export default function Home() {
   return (
     <div>
       <ParticleBackground />
-      <NavBar />
+
       <header className="text-4xl text-center font-bold p-8">
         Mayowa Awosiyan
       </header>
@@ -29,6 +28,13 @@ export default function Home() {
           software developer for the University of Ottawa working under a
           professor. For more details see the resume tab, which is currently a
           work in progress!
+        </p>
+        <h1 className="text-center text-xl font-bold">
+          Technologies and Skills
+        </h1>
+        <p className="text-center p-8 px-12">
+          From personal projects to coursework I have experience with several
+          different technologies including: A List Of my skills coming soon!
         </p>
       </div>
     </div>
