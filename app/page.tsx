@@ -1,4 +1,5 @@
 import ParticleBackground from "./components/particlebackground";
+import Skill from "./components/skill";
 
 export default function Home() {
   return (
@@ -36,6 +37,13 @@ export default function Home() {
           From personal projects to coursework I have experience with several
           different technologies including: A List Of my skills coming soon!
         </p>
+        <div className="grid-cols-5">
+          <Skill
+            link="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdJjR3QYvEGUXMgsZKvy2Llx3rWKDQgpxjIQ&s"
+            alt="Python's Logo"
+            description="I have used Python for both school projects and during previous jobs"
+          />
+        </div>
       </div>
     </div>
   );

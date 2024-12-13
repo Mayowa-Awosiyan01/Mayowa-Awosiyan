@@ -10,9 +10,9 @@ interface SkillProps {
 
 export default function Skill({ link, alt, description }: SkillProps) {
   return (
-    <div>
-      <Image src={link} alt={alt} />
-      <p>{description}</p>
-    </div>
+    <span className="bg-zinc-500 p-4">
+      <Image src={link} alt={alt} width={100} height={100} />
+      <span className="text-red-400">{description}</span>
+    </span>
   );
 }
