@@ -37,14 +37,64 @@ export default function Home() {
           From personal projects to coursework I have experience with several
           different technologies including: A List Of my skills coming soon!
         </p>
-        <div className="grid-cols-5">
+        <div className="grid-cols-5 grid-rows-3">
           <Skill
             link="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdJjR3QYvEGUXMgsZKvy2Llx3rWKDQgpxjIQ&s"
             alt="Python's Logo"
-            description="I have used Python for both school projects and during previous jobs"
-          />
+          >
+            <span className="text-center">Python</span>
+          </Skill>
+          {/* Place holder skills for testing formatting */}
+          <Skill
+            link="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdJjR3QYvEGUXMgsZKvy2Llx3rWKDQgpxjIQ&s"
+            alt="Python's Logo"
+          >
+            <span className="text-center">Python</span>
+          </Skill>
+          <Skill
+            link="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdJjR3QYvEGUXMgsZKvy2Llx3rWKDQgpxjIQ&s"
+            alt="Python's Logo"
+          >
+            <span className="text-center">Python</span>
+          </Skill>
+          <Skill
+            link="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdJjR3QYvEGUXMgsZKvy2Llx3rWKDQgpxjIQ&s"
+            alt="Python's Logo"
+          >
+            <span className="text-center">Python</span>
+          </Skill>
+          <Skill
+            link="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdJjR3QYvEGUXMgsZKvy2Llx3rWKDQgpxjIQ&s"
+            alt="Python's Logo"
+          >
+            <span className="text-center">Python</span>
+          </Skill>
+          <Skill
+            link="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdJjR3QYvEGUXMgsZKvy2Llx3rWKDQgpxjIQ&s"
+            alt="Python's Logo"
+          >
+            <span className="text-center">Python</span>
+          </Skill>
+          <Skill
+            link="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdJjR3QYvEGUXMgsZKvy2Llx3rWKDQgpxjIQ&s"
+            alt="Python's Logo"
+          >
+            <span className="text-center">Python</span>
+          </Skill>
+          <Skill
+            link="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdJjR3QYvEGUXMgsZKvy2Llx3rWKDQgpxjIQ&s"
+            alt="Python's Logo"
+          >
+            <span className="text-center">Python</span>
+          </Skill>
         </div>
       </div>
+      <p>
+        {" "}
+        This is just some temporary dummy content so I can see the bottom of the
+        page without having to go fullscreen every time because that is kinda
+        annoying
+      </p>
     </div>
   );
 }
