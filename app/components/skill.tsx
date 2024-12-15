@@ -18,7 +18,7 @@ export default function Skill({ link, alt, children }: SkillProps) {
     <button
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className="bg-gray-700 p-4 hover:p-6 hover:self-center transition-all rounded-lg"
+      className="bg-gray-700 p-4 hover:p-6 hover:self-center transition-all rounded-lg  flex-col items-center justify-center"
     >
       <Image
         className="place-content-center"
@@ -27,7 +27,7 @@ export default function Skill({ link, alt, children }: SkillProps) {
         width={30}
         height={30}
       />
-      {isHovered ? children : ""}
+      {isHovered && <div className="text-center w-full mt-2">{children}</div>}
     </button>
   );
 }
