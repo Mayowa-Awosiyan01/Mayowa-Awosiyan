@@ -37,7 +37,7 @@ export default function Home() {
           From personal projects to coursework I have experience with several
           different technologies including: A List Of my skills coming soon!
         </p>
-        <div className="grid-cols-5">
+        <div className="grid-cols-5 mb-6">
           <Skill
             link="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdJjR3QYvEGUXMgsZKvy2Llx3rWKDQgpxjIQ&s"
             alt="Python's Logo"
@@ -89,12 +89,6 @@ export default function Home() {
           </Skill>
         </div>
       </div>
-      <p>
-        {" "}
-        This is just some temporary dummy content so I can see the bottom of the
-        page without having to go fullscreen every time because that is kinda
-        annoying
-      </p>
     </div>
   );
 }
