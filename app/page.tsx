@@ -39,53 +39,53 @@ export default function Home() {
         </p>
         <div className="grid-cols-5 mb-6">
           <Skill
-            link="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdJjR3QYvEGUXMgsZKvy2Llx3rWKDQgpxjIQ&s"
+            link="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/172px-Python-logo-notext.svg.png"
             alt="Python's Logo"
           >
             <span className="text-center">Python</span>
           </Skill>
           {/* Place holder skills for testing formatting */}
           <Skill
-            link="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdJjR3QYvEGUXMgsZKvy2Llx3rWKDQgpxjIQ&s"
-            alt="Python's Logo"
+            link="https://static-00.iconduck.com/assets.00/java-icon-2048x2048-3pfathb3.png"
+            alt="Java's Logo"
           >
-            <span className="text-center">Python</span>
+            <span className="text-center">Java</span>
           </Skill>
           <Skill
-            link="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdJjR3QYvEGUXMgsZKvy2Llx3rWKDQgpxjIQ&s"
-            alt="Python's Logo"
+            link="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+            alt="JavaScript's Logo"
           >
-            <span className="text-center">Python</span>
+            <span className="text-center">JavaScript</span>
           </Skill>
           <Skill
-            link="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdJjR3QYvEGUXMgsZKvy2Llx3rWKDQgpxjIQ&s"
-            alt="Python's Logo"
+            link="https://cdn.iconscout.com/icon/free/png-256/free-typescript-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-company-brand-vol-7-pack-logos-icons-2945272.png?f=webp&w=256"
+            alt="TypeScript's Logo"
           >
-            <span className="text-center">Python</span>
+            <span className="text-center">TypeScript</span>
           </Skill>
           <Skill
-            link="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdJjR3QYvEGUXMgsZKvy2Llx3rWKDQgpxjIQ&s"
-            alt="Python's Logo"
+            link="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9uzErWz9EXqZDxZ5lP9aYpMz8eK6rr5X3w&s"
+            alt="Next.JS's Logo"
           >
-            <span className="text-center">Python</span>
+            <span className="text-center">Next.JS</span>
           </Skill>
           <Skill
-            link="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdJjR3QYvEGUXMgsZKvy2Llx3rWKDQgpxjIQ&s"
-            alt="Python's Logo"
+            link="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/768px-HTML5_logo_and_wordmark.svg.png"
+            alt="HTML Logo"
           >
-            <span className="text-center">Python</span>
+            <span className="text-center">HTML</span>
           </Skill>
           <Skill
-            link="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdJjR3QYvEGUXMgsZKvy2Llx3rWKDQgpxjIQ&s"
-            alt="Python's Logo"
+            link="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/544px-CSS3_logo_and_wordmark.svg.png"
+            alt="CSS Logo"
           >
-            <span className="text-center">Python</span>
+            <span className="text-center">CSS</span>
           </Skill>
           <Skill
-            link="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdJjR3QYvEGUXMgsZKvy2Llx3rWKDQgpxjIQ&s"
-            alt="Python's Logo"
+            link="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/768px-React-icon.svg.png"
+            alt="React's Logo"
           >
-            <span className="text-center">Python</span>
+            <span className="text-center">React</span>
           </Skill>
         </div>
       </div>
