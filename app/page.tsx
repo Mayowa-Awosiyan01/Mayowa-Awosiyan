@@ -35,7 +35,7 @@ export default function Home() {
         </h1>
         <p className="text-center p-8 px-12">
           From personal projects to coursework I have experience with several
-          different technologies including: A List Of my skills coming soon!
+          different technologies including:
         </p>
         <div className="grid-cols-5 mb-6">
           <Skill
@@ -86,6 +86,24 @@ export default function Home() {
             alt="React's Logo"
           >
             <span className="text-center">React</span>
+          </Skill>
+          <Skill
+            link="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/768px-Tailwind_CSS_Logo.svg.png?20230715030042"
+            alt="Tailwind Logo"
+          >
+            <span className="text-center">TailwindCSS</span>
+          </Skill>
+          <Skill
+            link="https://storage.googleapis.com/cms-storage-bucket/4fd5520fe28ebf839174.svg"
+            alt="Flutter Logo"
+          >
+            <span className="text-center">Flutter</span>
+          </Skill>
+          <Skill
+            link="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/97_Docker_logo_logos-512.png"
+            alt=" Logo"
+          >
+            <span className="text-center">Docker</span>
           </Skill>
         </div>
       </div>
