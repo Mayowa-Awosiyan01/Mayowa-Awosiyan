@@ -8,6 +8,7 @@ const nextConfig: NextConfig = {
       "upload.wikimedia.org",
       "cdn.iconscout.com",
       "static-00.iconduck.com",
+      "cdn4.iconfinder.com",
     ],
   },
 };
