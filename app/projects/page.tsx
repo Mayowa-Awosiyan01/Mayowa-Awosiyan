@@ -12,8 +12,8 @@ export default function Project() {
         progress and as new ones start.
       </p>
       <h3 className="text-center text-2xl font-semibold text p-8">NestSplit</h3>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 px-4">
-        <div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
+        <div className="p-4">
           <p>
             NestSplit is my flutter project inspired by SplitWise. Splitwise is
             a mobile application that helps groups and households keep track of
@@ -24,15 +24,46 @@ export default function Project() {
             what they need to do in their household.
           </p>
         </div>
-        <div>
+        <div className="p-4">
           <Image
             src={
               "https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
             }
             alt="Placeholder image before adding a picture of NestSplit"
-            height={50}
-            width={50}
+            height={100}
+            width={100}
           />
+        </div>
+      </div>
+      <h3 className="text-center text-2xl font-semibold text p-8">
+        Knapsack Problem Empirical Study
+      </h3>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
+        <div className="p-4">
+          <Image
+            src={
+              "https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
+            }
+            alt="Placeholder image before adding a picture of NestSplit"
+            height={100}
+            width={100}
+          />
+        </div>
+        <div className="p-4">
+          <p>
+            For a course on artificial intelligence I was tasked with solving
+            the knapsack problem with ways involving algorithms used in
+            Artificial Intelligence and comparing the results to the more
+            traditional ways of solving the problem. <br></br>
+            The knapsack problem is a problem where you are given a group of
+            items each with their own weight and value alongside a knapsack with
+            a maximum weight. Your task is to find the combination of items that
+            maximizes total value without exceeding the max weight of the
+            knapsack. In this report I solved instances of the problem using
+            simmulated annealing and the genetic algorithm to utilize concepts
+            of artificail intelligence and machine learning which was the focus
+            of the course.
+          </p>
         </div>
       </div>
     </div>
