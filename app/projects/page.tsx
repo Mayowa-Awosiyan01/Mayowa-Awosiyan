@@ -1,5 +1,6 @@
 import ParticleBackground from "../components/particlebackground";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Project() {
   return (
@@ -8,7 +9,7 @@ export default function Project() {
       <h1 className="text-4xl text-center font-bold p-8">Projects</h1>
       <p className="text-center p-8 px-12">
         Below you will find some descriptions of my projects, both completed
-        ones and the ones in progress. I will be updating this page as they
+        ones and works in progress. I will be updating this page as they
         progress and as new ones start.
       </p>
       <h3 className="text-center text-2xl font-semibold text p-8">NestSplit</h3>
@@ -27,11 +28,12 @@ export default function Project() {
         <div className="p-4">
           <Image
             src={
-              "https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
+              "https://raw.githubusercontent.com/Mayowa-Awosiyan01/Mayowa-Awosiyan/refs/heads/Project-Page/app/assets/nestSplitLogo.png"
             }
-            alt="Placeholder image before adding a picture of NestSplit"
+            alt="NestSplit's Logo"
             height={100}
-            width={100}
+            width={200}
+            className="place-content-center"
           />
         </div>
       </div>
@@ -42,12 +44,25 @@ export default function Project() {
         <div className="p-4">
           <Image
             src={
-              "https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
+              "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Knapsack_Problem_Illustration.svg/250px-Knapsack_Problem_Illustration.svg.png"
             }
             alt="Placeholder image before adding a picture of NestSplit"
             height={100}
-            width={100}
+            width={200}
           />
+          <p>
+            {" "}
+            To view the study click{" "}
+            <Link
+              href={
+                "https://colab.research.google.com/drive/1WaYsNgHHgYFojwEVCIFgNUj79ktSfHSu?usp=sharing"
+              }
+              className="text-blue-600 underline"
+            >
+              here
+            </Link>
+            .
+          </p>
         </div>
         <div className="p-4">
           <p>
@@ -64,6 +79,33 @@ export default function Project() {
             of artificail intelligence and machine learning which was the focus
             of the course.
           </p>
+        </div>
+      </div>
+      <h3 className="text-center text-2xl font-semibold text p-8">
+        My Portfolio
+      </h3>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
+        <div className="p-4">
+          <p>
+            My latest project is this whebiste which I developed to showcase my
+            skills and experience. I developed it using Next.JS so the frontend
+            is React, HTML, JavaScript and TailwindCSS. Meanwhile it is deployed
+            with Vercel. The animated background was inspired by the Matrix and
+            was created using the JavaScript library react-particles-js. Some
+            things I want to add to this website include: a button to change the
+            animaated background to different styles and my resume so please
+            check back for those updates in the future.
+          </p>
+        </div>
+        <div className="p-4">
+          <Image
+            src={
+              "https://raw.githubusercontent.com/Mayowa-Awosiyan01/Mayowa-Awosiyan/629d9319ecd4a8df73aa7b6e0e3dc77efb80b24e/app/assets/you-are-here-icon.svg"
+            }
+            alt="A you are here icon"
+            height={100}
+            width={150}
+          />
         </div>
       </div>
     </div>
