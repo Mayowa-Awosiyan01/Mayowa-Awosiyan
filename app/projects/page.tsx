@@ -104,7 +104,7 @@ export default function Project() {
             }
             alt="A you are here icon"
             height={100}
-            width={150}
+            width={100}
           />
         </div>
       </div>
