@@ -28,7 +28,7 @@ export default function Project() {
         <div className="p-4">
           <Image
             src={
-              "https://raw.githubusercontent.com/Mayowa-Awosiyan01/Mayowa-Awosiyan/refs/heads/Project-Page/app/assets/nestSplitLogo.png"
+              "https://raw.githubusercontent.com/Mayowa-Awosiyan01/Mayowa-Awosiyan/refs/heads/main/app/assets/nestSplitLogo.png"
             }
             alt="NestSplit's Logo"
             height={100}
@@ -46,7 +46,7 @@ export default function Project() {
             src={
               "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Knapsack_Problem_Illustration.svg/250px-Knapsack_Problem_Illustration.svg.png"
             }
-            alt="Placeholder image before adding a picture of NestSplit"
+            alt="A basic diagram showing off the knapsack problem"
             height={100}
             width={200}
           />
