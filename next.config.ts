@@ -9,6 +9,8 @@ const nextConfig: NextConfig = {
       "cdn.iconscout.com",
       "static-00.iconduck.com",
       "cdn4.iconfinder.com",
+      "github.com",
+      "raw.githubusercontent.com",
     ],
   },
 };
