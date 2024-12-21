@@ -1,36 +1,21 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mayowa Awosiyan's Portfolio
 
-## Getting Started
+Hello this is my portfolio to show off my projects, skills, and interests. It is still currently a work in porgress as I create.
 
-First, run the development server:
+### Tech Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+I am building this portfolio with Next.JS so my frontend consists of Next.JS, React, TypeScript, JavaScript, HTML and TailwindCSS. Currently the project does not have a backend since no features that require one have been implemented yet. Please see the future updates section below for more details.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The Matrix themed animated background of the website was made using the tsParticles library which is a JavaScript library that helps create animated backgrounds for websites and even supports interactivity. To learn more about it you can visit their [website](https://particles.js.org/).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Recent Updates
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The most recent update to the website added the project page to the website which outlines some of my past projects and my works in progress.
 
-## Learn More
+### Future Updates
 
-To learn more about Next.js, take a look at the following resources:
+The next planned update to the website will be adding my Resume to the website. I will likely be using a library called React-PDF for that.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Further down the line I would like to also add a way for visiters to change the animated background away from the Matrix themed one it is set too currently because while trying to set up the falling binary values I came across several different configurations I found very appealing. Those config files can be found next to the binaryConfig.js file in the app/config folder.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Another planned future update, is to add a backend to this project to be used for a contact me page that would allow visitors to directly send me messages about the website or my projects.
