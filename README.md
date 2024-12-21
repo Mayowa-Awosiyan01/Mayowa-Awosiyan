@@ -1,6 +1,6 @@
 # Mayowa Awosiyan's Portfolio
 
-Hello this is my portfolio to show off my projects, skills, and interests. It is still currently a work in porgress as I create.
+Hello this is my portfolio to show off my projects, skills, and interests. It is still currently a work in porgress as I continue to update it. Feel free to fork this project if you wish or if you just want to visit the live version of the website click [here](https://mayowa-awosiyan.vercel.app/).
 
 ### Tech Stack
 
