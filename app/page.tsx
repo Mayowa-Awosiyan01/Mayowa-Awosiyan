@@ -11,7 +11,7 @@ export default function Home() {
       </header>
 
       <br></br>
-      <div className="text-center gap-4">
+      <div className="text-center gap-4 m-6">
         <h1 className="text-center font-bold text-xl">About Me</h1>
         <p className="text-center p-8 px-12">
           My name is Mayowa Awosiyan and I am a software developer. Welcome to
