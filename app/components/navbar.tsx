@@ -11,7 +11,7 @@ export default function NavBar() {
         </Link>
       </div>
       <div>
-        <Link href={"#"} className="flex-initial">
+        <Link href={"/resume"} className="flex-initial">
           Resume
         </Link>
       </div>
