@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Project() {
   return (
-    <div>
+    <div className="m-6">
       <ParticleBackground />
       <h1 className="text-4xl text-center font-bold p-8">Projects</h1>
       <p className="text-center p-8 px-12">
