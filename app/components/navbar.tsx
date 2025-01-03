@@ -1,4 +1,5 @@
 import Link from "next/link";
+
 //import { usePathname } from 'next/navigation';
 
 export default function NavBar() {
@@ -11,9 +12,14 @@ export default function NavBar() {
         </Link>
       </div>
       <div>
-        <Link href={"#"} className="flex-initial">
+        <a
+          href={"/Resume.pdf"}
+          target="_blank"
+          className="flex-initial"
+          rel="noopener noreferrer"
+        >
           Resume
-        </Link>
+        </a>
       </div>
       <div>
         <Link
