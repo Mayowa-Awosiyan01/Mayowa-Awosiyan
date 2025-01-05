@@ -37,14 +37,13 @@ export default function Home() {
           From personal projects to coursework I have experience with several
           different technologies including:
         </p>
-        <div className="grid-cols-5 mb-6">
+        <div className="grid grid-cols-5 mb-6 gap-4 justify-items-center">
           <Skill
             link="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/172px-Python-logo-notext.svg.png"
             alt="Python's Logo"
           >
             <span className="text-center">Python</span>
           </Skill>
-          {/* Place holder skills for testing formatting */}
           <Skill
             link="https://static-00.iconduck.com/assets.00/java-icon-2048x2048-3pfathb3.png"
             alt="Java's Logo"
@@ -104,6 +103,18 @@ export default function Home() {
             alt=" Logo"
           >
             <span className="text-center">Docker</span>
+          </Skill>
+          <Skill
+            link="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/810px-Postgresql_elephant.svg.png"
+            alt="PostgreSQL"
+          >
+            <span className="text-center">PostgreSQL</span>
+          </Skill>
+          <Skill
+            link="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Firebase_Logo.svg/768px-Firebase_Logo.svg.png"
+            alt="Firebasse Logo"
+          >
+            <span className="text-center">Firebase</span>
           </Skill>
         </div>
       </div>
