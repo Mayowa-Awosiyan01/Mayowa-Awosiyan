@@ -111,7 +111,7 @@ export default function Home() {
             <span className="text-center">PostgreSQL</span>
           </Skill>
           <Skill
-            link="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Firebase_Logo.svg/768px-Firebase_Logo.svg.png"
+            link="https://raw.githubusercontent.com/Mayowa-Awosiyan01/Mayowa-Awosiyan/05e5008fcd9938621e34560cbc25340010384006/public/Logomark_Full%20Color.svg"
             alt="Firebasse Logo"
           >
             <span className="text-center">Firebase</span>
