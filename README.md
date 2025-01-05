@@ -20,6 +20,6 @@ The most recent update to the website made it so that the resume button in the n
 
 ---
 
-The next planned update to the website shoulbe be adding a backend to this project to be used for a contact me page that would allow visitors to directly send me messages about the website or my projects. I will probably be using either Firebase or Supabase for that.
+The next planned update to the website will be minor additions to the skills on the homepapge and its layout. After that I want to add a backend to this project to be used for a contact me page that would allow visitors to directly send me messages about the website or my projects. I will probably be using either Firebase or Supabase for that.
 
 Further down the line I would like to also add a way for visiters to change the animated background away from the Matrix themed one it is set too currently because while trying to set up the falling binary values I came across several different configurations I found very appealing. Those config files can be found next to the binaryConfig.js file in the app/config folder. This would also allow me to use the interactive elements of the lobrary more and from my testing you can do alot of cool things with it.
