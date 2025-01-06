@@ -27,7 +27,11 @@ export default function Skill({ link, alt, children }: SkillProps) {
         width={30}
         height={30}
       />
-      {isHovered && <div className="text-center w-full mt-2">{children}</div>}
+      {isHovered && (
+        <div className="text-center w-full mt-2">
+          <span className="text-center">{children}</span>
+        </div>
+      )}
     </button>
   );
 }
