@@ -34,8 +34,12 @@ export default function Home() {
           Technologies and Skills
         </h1>
         <p className="text-center p-8 px-12">
-          From personal projects to coursework I have experience with several
-          different technologies including:
+          Over time I have learnt plenty of skills and technoologies from my
+          Co-op positions, coursework and independent study. I am still learning
+          new skills and will definetly be adding to these in the future.
+          Currently I am learning cloud computing technologies such as Amazon
+          Web Services (AWS). For now however, the skills and tools I feel the
+          most comfortable with are the following:
         </p>
         <div className="grid md:grid-cols-5 mb-6 gap-4 justify-items-center sm:grid-cols-3">
           <Skill
