@@ -36,7 +36,7 @@ export default function Home() {
         <p className="text-center p-8 px-12">
           Over time I have learnt plenty of skills and technologies from my
           Co-op positions, coursework and independent study. I am still learning
-          new skills and will definetly be adding to these in the future.
+          new skills and will definitely be adding to these in the future.
           Currently I am learning cloud computing technologies such as Amazon
           Web Services (AWS). For now however, the skills and tools I feel the
           most comfortable with are the following:
