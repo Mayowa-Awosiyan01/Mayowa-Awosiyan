@@ -87,7 +87,7 @@ export default function Project() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
         <div className="p-4">
           <p>
-            My latest project is this webiste which I developed to showcase my
+            My latest project is this website which I developed to showcase my
             skills and experience. I developed it using Next.JS so the frontend
             is React, HTML, JavaScript and TailwindCSS. Meanwhile it is deployed
             with Vercel. The animated background was inspired by the Matrix and
