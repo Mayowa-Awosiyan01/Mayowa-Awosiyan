@@ -28,7 +28,7 @@ export default function Home() {
           science in June 2024. During my degree, I did multiple Co-ops as a web
           developer with different departments in the Government of Canada and a
           software developer for the University of Ottawa working under a
-          professor. For more details see the resume tab.
+          professor. For more details check my resume in the navigation bar.
         </p>
         <h1 className="text-center text-2xl font-bold">
           Technologies and Skills
