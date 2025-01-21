@@ -6,7 +6,7 @@ Hello this is my portfolio to show off my projects, skills, and interests. It is
 
 ---
 
-I am building this portfolio with Next.JS so my frontend consists of Next.JS, React, TypeScript, JavaScript, HTML and TailwindCSS. Currently the project does not have a backend since no features that require one have been implemented yet. Please see the future updates section below for more details.
+I am building this portfolio with Next.JS so my frontend consists of Next.JS, React, TypeScript, JavaScript, HTML and TailwindCSS. A recent update added the feedback component which is using a SQL table hosted by Supabase to store responses and when the comment was submitted.
 
 The Matrix themed animated background of the website was made using the tsParticles library which is a JavaScript library that helps create animated backgrounds for websites and even supports interactivity. To learn more about it you can visit their [website](https://particles.js.org/). Maybe one day I'll finally watch the second and third Matrix movies.
 
