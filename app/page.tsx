@@ -1,3 +1,4 @@
+import Feedback from "./components/feedback";
 import ParticleBackground from "./components/particlebackground";
 import Skill from "./components/skill";
 
@@ -13,7 +14,7 @@ export default function Home() {
       <br></br>
       <div className="text-center gap-4 m-6">
         <h1 className="text-center font-bold text-2xl">About Me</h1>
-        <p className="text-center p-8 px-12">
+        <p className="text-center p-8 px-12 text-lg">
           My name is Mayowa Awosiyan, and I am a software developer. Welcome to
           my portfolio, which is still currently a work in progress but I hope
           it gives you an idea of my skills. I am also working on a project I am
@@ -22,17 +23,17 @@ export default function Home() {
           newfound love for rouge-likes with Hades or playing Marvel Rivals.
         </p>
         <h1 className="text-center text-2xl font-bold">Professional History</h1>
-        <p className="text-center p-8 px-12">
+        <p className="text-center p-8 px-12 text-lg">
           I graduated from the University of Ottawa with a degree in computer
           science in June 2024. During my degree, I did multiple Co-ops as a web
           developer with different departments in the Government of Canada and a
           software developer for the University of Ottawa working under a
-          professor. For more details see the resume tab.
+          professor. For more details check my resume in the navigation bar.
         </p>
         <h1 className="text-center text-2xl font-bold">
           Technologies and Skills
         </h1>
-        <p className="text-center p-8 px-12">
+        <p className="text-center p-8 px-12 text-lg">
           Over time, I have learned plenty of skills and technologies from my
           Co-op positions, coursework, and independent study. I am still
           learning new skills and will definitely add to these in the future.
@@ -40,7 +41,7 @@ export default function Home() {
           Web Services (AWS). For now, however, the skills and tools I feel the
           most comfortable with are the following:
         </p>
-        <div className="grid md:grid-cols-5 mb-6 gap-4 justify-items-center sm:grid-cols-3">
+        <div className="grid md:grid-cols-5 mb-6 gap-4 justify-items-center sm:grid-cols-2">
           <Skill
             link="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/172px-Python-logo-notext.svg.png"
             alt="Python's Logo"
@@ -132,6 +133,7 @@ export default function Home() {
             Node.js
           </Skill>
         </div>
+        <Feedback />
       </div>
     </div>
   );

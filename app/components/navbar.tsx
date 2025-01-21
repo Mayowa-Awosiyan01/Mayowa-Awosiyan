@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function NavBar() {
   //const pathname = usePathname();
   return (
-    <div className="grid grid-rows-1 grid-cols-5 text-center p-4 font-bold">
+    <div className="grid grid-rows-1 grid-cols-5 text-center p-4 font-bold text-lg">
       <div>
         <Link href={"/"} className="flex-initial">
           Home
