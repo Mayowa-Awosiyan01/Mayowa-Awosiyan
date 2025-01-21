@@ -21,15 +21,17 @@ export default function Feedback() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault(); // Prevent default form submission
     setIsSubmitting(true);
-    if (feedback.length == 0) {
-      console.log("Please enter in a comment");
+    if (feedback.trim().length == 0) {
+      console.log("Please enter a comment");
       setMessage("Please enter a message before submitting");
       setIsSubmitting(false);
     } else {
       try {
         const { data, error } = await supabase
           .from("Feedback")
-          .insert([{ content: feedback, email_address: null, Name: null }]);
+          .insert([
+            { content: feedback.trim(), email_address: null, Name: null },
+          ]);
 
         if (error) {
           console.error("Error inserting feedback:", error);
