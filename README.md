@@ -20,6 +20,6 @@ The most recent updates to the website changed my resume to a more recent versio
 
 ---
 
-For the next update I think I want to remove the projects page and merge it's contents with the home page. I also want to make the projects more visually appealing by creating a component that will better show them off.
+For the next update I will be removing the projects page and merge it's contents with the home page. I will be making the projects more visually appealing by creating a component that will better show them off with updated styling and potenially some interactivity like I have with the skills already.
 
 Further down the line I would like to also add a way for visiters to change the animated background away from the Matrix themed one it is set too currently because while trying to set up the falling binary values I came across several different configurations I found very appealing. Those config files can be found next to the binaryConfig.js file in the app/config folder. This would also allow me to use the interactive elements of the lobrary more and from my testing you can do alot of cool things with it. Also I want to add styling for suporting smaller screens like mobile devices because currently the styling is mostly assuming visitors will be on desktop, which has held true so far but I still think it is important to add support for mobile devices.
