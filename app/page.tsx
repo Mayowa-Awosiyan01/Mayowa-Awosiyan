@@ -1,4 +1,4 @@
-import Contact from "./components/contact";
+import Feedback from "./components/feedback";
 import ParticleBackground from "./components/particlebackground";
 import Skill from "./components/skill";
 
@@ -133,7 +133,7 @@ export default function Home() {
             Node.js
           </Skill>
         </div>
-        <Contact />
+        <Feedback />
       </div>
     </div>
   );
