@@ -8,9 +8,20 @@ interface ProjectProps {
 
 export default function Project({ link, alt, children }: ProjectProps) {
   return (
-    <div className="">
-      <Image src={link} alt={alt} />
-      {children}
+    <div className="grid grid-cols-2 px-8 text-lg border-solid hover:border-white border-2 bg-slate-600 place-content-evenly rounded-xl">
+      <div className="flex justify-center items-center">
+        <Image
+          layout="Responsive"
+          className="w-full h-full object-contain"
+          src={link}
+          alt={alt}
+          width={100}
+          height={200}
+        />
+      </div>
+      <div>
+        <p>{children}</p>
+      </div>
     </div>
   );
 }
