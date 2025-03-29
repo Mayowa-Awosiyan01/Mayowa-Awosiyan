@@ -1,5 +1,6 @@
+"use client";
 import Image from "next/image";
-
+import { useState } from "react";
 interface ProjectProps {
   link: string;
   alt: string;
@@ -7,8 +8,14 @@ interface ProjectProps {
 }
 
 export default function Project({ link, alt, children }: ProjectProps) {
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
-    <div className="grid grid-cols-2 px-8 text-lg border-solid border-2 bg-slate-600 place-content-evenly rounded-xl hover:outline  hover:outline-6 hover:outline-white">
+    <div
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      className="grid px-8 text-lg border-solid border-2 bg-slate-600 place-content-evenly rounded-xl hover:outline  hover:outline-6 hover:outline-white transition-all duration-300"
+    >
       <div className="flex justify-center items-center">
         <Image
           layout="Responsive"
@@ -19,9 +26,11 @@ export default function Project({ link, alt, children }: ProjectProps) {
           height={200}
         />
       </div>
-      <div>
-        <p>{children}</p>
-      </div>
+      {isHovered && (
+        <div>
+          <p>{children}</p>
+        </div>
+      )}
     </div>
   );
 }
