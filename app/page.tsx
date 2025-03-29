@@ -139,6 +139,7 @@ export default function Home() {
           <Project
             link="https://raw.githubusercontent.com/Mayowa-Awosiyan01/Mayowa-Awosiyan/refs/heads/main/app/assets/nestSplitLogo.png"
             alt="Testing stuff"
+            prompt="Home Management App"
           >
             NestSplit is my flutter project inspired by Splitwise. Splitwise is
             a mobile application that helps groups and households keep track of
@@ -151,6 +152,7 @@ export default function Home() {
           <Project
             link="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Knapsack_Problem_Illustration.svg/250px-Knapsack_Problem_Illustration.svg.png"
             alt="Image showing an example of the knapsack problem"
+            prompt="AI Knapsack Problem"
           >
             For a course on artificial intelligence, I was tasked with solving
             the knapsack problem with ways involving algorithms used in

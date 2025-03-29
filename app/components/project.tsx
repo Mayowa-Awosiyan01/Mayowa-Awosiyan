@@ -5,16 +5,17 @@ interface ProjectProps {
   link: string;
   alt: string;
   children: React.ReactNode;
+  prompt: string;
 }
 
-export default function Project({ link, alt, children }: ProjectProps) {
+export default function Project({ link, alt, children, prompt }: ProjectProps) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
     <div
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className="grid px-8 text-lg border-solid border-2 bg-slate-600 place-content-evenly rounded-xl hover:outline  hover:outline-6 hover:outline-white transition-all duration-300"
+      className="grid px-8 text-lg border-solid border-2 bg-slate-600 place-content-evenly rounded-xl hover:outline  hover:outline-6 hover:outline-white"
     >
       <div className="flex justify-center items-center">
         <Image
@@ -28,7 +29,7 @@ export default function Project({ link, alt, children }: ProjectProps) {
       </div>
       {isHovered && (
         <div>
-          <p>{children}</p>
+          <p>{prompt}</p>
         </div>
       )}
     </div>
