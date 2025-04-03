@@ -260,7 +260,7 @@ export default function Home() {
         </div>
         <h1 className="text-center text-2xl font-bold">Projects</h1>
         <h4>Click on the project for more details!</h4>
-        <div className="grid grid-cols-2 gap-2 p-8">
+        <div className="grid grid-cols-3 gap-2 p-8">
           {projects.map((project, index) => (
             <Project
               key={index}
