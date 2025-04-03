@@ -1,9 +1,85 @@
+"use client";
+import { useState } from "react";
 import Feedback from "./components/feedback";
 import ParticleBackground from "./components/particlebackground";
 import Project from "./components/project";
 import Skill from "./components/skill";
+import Image from "next/image";
+
+interface ProjectType {
+  link: string;
+  alt: string;
+  prompt: string;
+  children: React.ReactNode;
+}
 
 export default function Home() {
+  const [selectedProject, setSelectedProject] = useState<ProjectType | null>(
+    null
+  );
+
+  const handleProjectSelect = (project: ProjectType) => {
+    console.log(project.prompt.toString());
+    // Toggle project selection
+    setSelectedProject((prevProject) =>
+      prevProject?.prompt.toString() === project.prompt.toString()
+        ? null
+        : project
+    );
+  };
+
+  const projects: ProjectType[] = [
+    {
+      link: "https://raw.githubusercontent.com/Mayowa-Awosiyan01/Mayowa-Awosiyan/refs/heads/main/app/assets/nestSplitLogo.png",
+      alt: "Testing stuff",
+      prompt: "Home Management App",
+      children: (
+        <div>
+          <h2 className="text-2xl font-bold mb-4">NestSplit Project Details</h2>
+          <p>
+            NestSplit is my flutter project inspired by Splitwise. Splitwise is
+            a mobile application that helps groups and households keep track of
+            who owes who money and how much. The goal of NestSplit is to create
+            an application where households or &apos;nests&apos; can keep track
+            of who owes who money, create shared grocery lists, keep track of
+            chores and more to help families, roommates and others keep track of
+            what they need to do in their household.
+          </p>
+        </div>
+      ),
+    },
+    {
+      link: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Knapsack_Problem_Illustration.svg/250px-Knapsack_Problem_Illustration.svg.png",
+      alt: "Image showing an example of the knapsack problem",
+      prompt: "AI Knapsack Problem",
+      children: (
+        <div>
+          <h2 className="text-2xl font-bold mb-4">
+            AI Knapsack Problem Project Details
+          </h2>
+          <p>
+            For a course on artificial intelligence, I was tasked with solving
+            the knapsack problem with ways involving algorithms used in
+            artificial intelligence and comparing the results to the more
+            traditional ways of solving the problem.
+          </p>
+          <p className="mt-4">
+            The knapsack problem is a problem where you are given a group of
+            items each with a weight and a value alongside a knapsack with a
+            maximum weight. Your task is to find the combination of items that
+            maximizes total value without exceeding the max weight of the
+            knapsack.
+          </p>
+          <p className="mt-4">
+            In this report, I solved instances of the problem using simulated
+            annealing and the genetic algorithm to utilize concepts of
+            artificial intelligence and machine learning which was the focus of
+            the course.
+          </p>
+        </div>
+      ),
+    },
+  ];
   return (
     <div>
       <ParticleBackground />
@@ -136,38 +212,34 @@ export default function Home() {
         </div>
         <h1 className="text-center text-2xl font-bold">Projects</h1>
         <div className="grid grid-cols-2 gap-2 p-8">
-          <Project
-            link="https://raw.githubusercontent.com/Mayowa-Awosiyan01/Mayowa-Awosiyan/refs/heads/main/app/assets/nestSplitLogo.png"
-            alt="Testing stuff"
-            prompt="Home Management App"
-          >
-            NestSplit is my flutter project inspired by Splitwise. Splitwise is
-            a mobile application that helps groups and households keep track of
-            who owes who money and how much. The goal of NestSplit is to create
-            an application where households or &apos;nests&apos; can keep track
-            of who owes who money, create shared grocery lists, keep track of
-            chores and more to help families, roommates and others keep track of
-            what they need to do in their household.
-          </Project>
-          <Project
-            link="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Knapsack_Problem_Illustration.svg/250px-Knapsack_Problem_Illustration.svg.png"
-            alt="Image showing an example of the knapsack problem"
-            prompt="AI Knapsack Problem"
-          >
-            For a course on artificial intelligence, I was tasked with solving
-            the knapsack problem with ways involving algorithms used in
-            artificial intelligence and comparing the results to the more
-            traditional ways of solving the problem. <br></br>
-            The knapsack problem is a problem where you are given a group of
-            items each with a weight and a value alongside a knapsack with a
-            maximum weight. Your task is to find the combination of items that
-            maximizes total value without exceeding the max weight of the
-            knapsack. In this report I solved instances of the problem using
-            simulated annealing and the genetic algorithm to utilize concepts of
-            artificial intelligence and machine learning which was the focus of
-            the course.
-          </Project>
+          {projects.map((project, index) => (
+            <Project
+              key={index}
+              link={project.link}
+              alt={project.alt}
+              prompt={project.prompt}
+              onProjectSelect={() => handleProjectSelect(project)}
+            >
+              {project.children}
+            </Project>
+          ))}
         </div>
+        {selectedProject && (
+          <div className="p-6 bg-grey-700 rounded-xl">
+            <div className="flex">
+              <div className="w-1/2 pr-8">
+                <Image
+                  src={selectedProject.link}
+                  alt={selectedProject.alt}
+                  width={50}
+                  height={50}
+                  className="w-full h-auto object-contain"
+                />
+              </div>
+              <div className="w-1/2 text-left">{selectedProject.children}</div>
+            </div>
+          </div>
+        )}
         <Feedback />
       </div>
     </div>
