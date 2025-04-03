@@ -31,7 +31,7 @@ export default function Project({
           src={link}
           alt={alt}
           width={100}
-          height={200}
+          height={100}
         />
       </div>
       {isHovered && (
