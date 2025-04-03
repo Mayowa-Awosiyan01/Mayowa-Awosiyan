@@ -14,7 +14,7 @@ The Matrix themed animated background of the website was made using the tsPartic
 
 ---
 
-The most recent updates to the website changed my resume to a more recent version that better explains my skills and what I did in my previous roles. The big change of the recent update however is that projects are now on the main page and what used to be the project page has been deleted.
+The most recent updates to the website changed my resume to a more recent version that better explains my skills and what I did in my previous roles. The big change of the recent update however is that projects are now on the main page and what used to be the project page has been deleted. Clicking on a project also brings up a new component that gives more details about the project like what I did, why I did it, and what technologies I used for it. Another minor change is that the cursor does not change when hovering over the skills anymore since nothing happens when you click them... yet.
 
 ### Future Updates
 
