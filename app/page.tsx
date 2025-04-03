@@ -94,12 +94,14 @@ export default function Home() {
                 frontend is React, HTML, JavaScript and TailwindCSS. Meanwhile
                 it is deployed with Vercel. The animated background was inspired
                 by the Matrix and created using the JavaScript library
-                react-particles-js. For added diffuculty and because I have the
+                react-particles-js. For added difficulty and because I have the
                 free time right now, I am doing everything from scratch instead
-                of just using a pre-existing template, admittedly some ideas are
-                inspired by templates and other protfolios I have seen but I am
-                creating all these components from scratch to get them to look
-                how they o in my head. It is going pretty well so far I think.
+                of just using a pre-existing template, admittedly, some ideas
+                are inspired by templates and other portfolios I have seen but I
+                am creating all these components from scratch to get them to
+                look how they do in my head. It is going pretty well so far, I
+                think but if you disagree send me a message on LinkedIn or if
+                you want to stay anonymous submit your feedback down below!
               </p>
               <p className="mt-4">
                 Some things I want to add to this website include: a button to
@@ -272,7 +274,7 @@ export default function Home() {
           ))}
         </div>
         {selectedProject && (
-          <div className="p-6 border-solid border-2 bg-gray-700 rounded-xl">
+          <div className="p-6 m-8 border-solid border-2 bg-gray-700 rounded-xl">
             <div className="flex">
               <div className="w-1/2 pr-8">
                 <Image
