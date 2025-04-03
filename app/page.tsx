@@ -231,8 +231,8 @@ export default function Home() {
                 <Image
                   src={selectedProject.link}
                   alt={selectedProject.alt}
-                  width={50}
-                  height={50}
+                  width={1000}
+                  height={1000}
                   className="w-full h-auto object-contain"
                 />
               </div>
