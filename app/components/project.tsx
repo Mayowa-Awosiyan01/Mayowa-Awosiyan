@@ -27,7 +27,7 @@ export default function Project({
       <div className="flex justify-center items-center">
         <Image
           layout="Responsive"
-          className="w-full h-full object-contain"
+          className="object-contain max-w-full max-h-[100px] aspect-square"
           src={link}
           alt={alt}
           width={100}
