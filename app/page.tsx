@@ -37,9 +37,9 @@ export default function Home() {
         <div>
           <h2 className="text-2xl font-bold mb-4">NestSplit Project Details</h2>
           <p>
-            NestSplit is my flutter project inspired by Splitwise. Splitwise is
+            NestSplit is my Flutter project inspired by Splitwise. Splitwise is
             a mobile application that helps groups and households keep track of
-            who owes who money and how much. The goal of NestSplit is to create
+            who owes whom money and how much. The goal of NestSplit is to create
             an application where households or &apos;nests&apos; can keep track
             of who owes who money, create shared grocery lists, keep track of
             chores and more to help families, roommates and others keep track of
@@ -65,7 +65,7 @@ export default function Home() {
           </p>
           <p className="mt-4">
             The knapsack problem is a problem where you are given a group of
-            items each with a weight and a value alongside a knapsack with a
+            items, each with a weight and a value, alongside a knapsack with a
             maximum weight. Your task is to find the combination of items that
             maximizes total value without exceeding the max weight of the
             knapsack.
@@ -73,9 +73,51 @@ export default function Home() {
           <p className="mt-4">
             In this report, I solved instances of the problem using simulated
             annealing and the genetic algorithm to utilize concepts of
-            artificial intelligence and machine learning which was the focus of
+            artificial intelligence and machine learning, which was the focus of
             the course.
           </p>
+        </div>
+      ),
+    },
+    {
+      link: "https://raw.githubusercontent.com/Mayowa-Awosiyan01/Mayowa-Awosiyan/629d9319ecd4a8df73aa7b6e0e3dc77efb80b24e/app/assets/you-are-here-icon.svg",
+      alt: "A you are here icon",
+      prompt: "My Website",
+      children: (
+        <div>
+          <h2 className="text-2xl font-bold mb-4">My Portfolio</h2>
+          <div>
+            <div>
+              <p>
+                My latest project is this website which I developed to showcase
+                my skills and experience. I developed it using Next.JS so the
+                frontend is React, HTML, JavaScript and TailwindCSS. Meanwhile
+                it is deployed with Vercel. The animated background was inspired
+                by the Matrix and created using the JavaScript library
+                react-particles-js. For added diffuculty and because I have the
+                free time right now, I am doing everything from scratch instead
+                of just using a pre-existing template, admittedly some ideas are
+                inspired by templates and other protfolios I have seen but I am
+                creating all these components from scratch to get them to look
+                how they o in my head. It is going pretty well so far I think.
+              </p>
+              <p className="mt-4">
+                Some things I want to add to this website include: a button to
+                change the animated background to different styles and changing
+                the skills on the homepage so when they are clicked they give a
+                more detailed picture on how I have used the skill. I also want
+                to add a full page scroll section to welcome users when they get
+                to this site, preferably with an animation that looks like my
+                name is being typed out.
+              </p>
+              <p className="mt-4">
+                I am going to keep updating this website whenever I have time
+                and new ideas on how to make it look better so check in every
+                once in a while to see the progress! Also feel free to click my
+                LinkedIn and connect with me!
+              </p>
+            </div>
+          </div>
         </div>
       ),
     },
@@ -93,19 +135,23 @@ export default function Home() {
         <h1 className="text-center font-bold text-2xl">About Me</h1>
         <p className="text-center p-8 px-12 text-lg">
           My name is Mayowa Awosiyan, and I am a software developer. Welcome to
-          my portfolio, which is still currently a work in progress but I hope
+          my portfolio, which is still currently a work in progress, but I hope
           it gives you an idea of my skills. I am also working on a project I am
-          calling NestSplit which you can read about here soon! When I am taking
-          a break from updating this portfolio or my projects I am embracing me
-          newfound love for rouge-likes with Hades or playing Marvel Rivals.
+          calling NestSplit, which you can read about here soon! When I am
+          taking a break from updating this portfolio or my projects, I am often
+          applying to jobs since I want a full-time software developer/engineer
+          role, recruiters, if you see this, feel free to help a guy out! I have
+          also recently been embracing my newfound love for roguelikes with
+          Hades or playing Marvel Rivals where I am sadly hard stuck platinum.
         </p>
         <h1 className="text-center text-2xl font-bold">Professional History</h1>
         <p className="text-center p-8 px-12 text-lg">
-          I graduated from the University of Ottawa with a degree in computer
-          science in June 2024. During my degree, I did multiple Co-ops as a web
-          developer with different departments in the Government of Canada and a
-          software developer for the University of Ottawa working under a
-          professor. For more details check my resume in the navigation bar.
+          I graduated from the University of Ottawa with a bachelor&apos;s
+          degree in computer science in June 2024. During my degree, I did
+          multiple co-ops as a software developer with different departments in
+          the Government of Canada and one co-op as a software developer for the
+          University of Ottawa working under a professor. For more details check
+          my resume in the navigation bar.
         </p>
         <h1 className="text-center text-2xl font-bold">
           Technologies and Skills
@@ -211,6 +257,7 @@ export default function Home() {
           </Skill>
         </div>
         <h1 className="text-center text-2xl font-bold">Projects</h1>
+        <h4>Click on the project for more details!</h4>
         <div className="grid grid-cols-2 gap-2 p-8">
           {projects.map((project, index) => (
             <Project
@@ -225,7 +272,7 @@ export default function Home() {
           ))}
         </div>
         {selectedProject && (
-          <div className="p-6 bg-grey-700 rounded-xl">
+          <div className="p-6 border-solid border-2 bg-gray-700 rounded-xl">
             <div className="flex">
               <div className="w-1/2 pr-8">
                 <Image
