@@ -5,6 +5,7 @@ import ParticleBackground from "./components/particlebackground";
 import Project from "./components/project";
 import Skill from "./components/skill";
 import Image from "next/image";
+import WelcomeSection from "./components/welcomeSection";
 
 interface ProjectType {
   link: string;
@@ -125,7 +126,7 @@ export default function Home() {
     },
   ];
   return (
-    <div>
+    <div className="snap-y snap-mandatory scroll-smooth h-screen">
       <ParticleBackground />
 
       <header className="text-4xl text-center font-bold p-8">
@@ -133,7 +134,7 @@ export default function Home() {
       </header>
 
       <br></br>
-      <div className="text-center gap-4 m-6">
+      <div className="text-center gap-4 m-6 snap-start">
         <h1 className="text-center font-bold text-2xl">About Me</h1>
         <p className="text-center p-8 px-12 text-lg">
           My name is Mayowa Awosiyan, and I am a software developer. Welcome to
