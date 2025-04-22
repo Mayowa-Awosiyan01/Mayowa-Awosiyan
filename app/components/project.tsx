@@ -34,11 +34,10 @@ export default function Project({
           height={100}
         />
       </div>
-      {isHovered && (
-        <div>
-          <p>{prompt}</p>
-        </div>
-      )}
+
+      <div>
+        <p>{prompt}</p>
+      </div>
     </div>
   );
 }
