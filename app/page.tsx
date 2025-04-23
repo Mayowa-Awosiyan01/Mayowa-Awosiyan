@@ -124,7 +124,7 @@ export default function Home() {
     },
   ];
   return (
-    <div className="h-screen">
+    <div id="name">
       <ParticleBackground />
 
       <header className="text-4xl text-center font-bold p-8">
