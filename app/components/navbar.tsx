@@ -1,11 +1,9 @@
+"use client";
 import Link from "next/link";
 
-//import { usePathname } from 'next/navigation';
-
 export default function NavBar() {
-  //const pathname = usePathname();
   return (
-    <div className="grid grid-rows-1 grid-cols-4 text-center p-4 font-bold text-lg">
+    <div className="fixed w-screen grid grid-cols-4 z-20 top-0 text-center p-4 pb-6 font-bold text-lg">
       <div>
         <Link href={"/"} className="flex-initial">
           Home
