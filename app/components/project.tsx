@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { useState } from "react";
+
 interface ProjectProps {
   link: string;
   alt: string;
@@ -15,12 +15,8 @@ export default function Project({
   prompt,
   onProjectSelect,
 }: ProjectProps) {
-  const [isHovered, setIsHovered] = useState(false);
-  //const [isSelected, setSelected] = useState(false);
   return (
     <div
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
       onClick={onProjectSelect}
       className="grid px-8 text-lg border-solid border-2 bg-gray-700 place-content-evenly rounded-xl hover:outline  hover:outline-6 hover:outline-white"
     >
