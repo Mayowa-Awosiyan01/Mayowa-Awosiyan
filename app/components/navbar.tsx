@@ -1,11 +1,31 @@
-import Link from "next/link";
+"use client";
 
-//import { usePathname } from 'next/navigation';
+import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export default function NavBar() {
-  //const pathname = usePathname();
+  const [isSticky, setSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScrolling = () => {
+      const windowHeight = window.innerHeight;
+      if (window.scrollY > windowHeight) {
+        setSticky(true);
+      } else {
+        setSticky(false);
+      }
+    };
+    window.addEventListener("scroll", handleScrolling);
+  });
+
   return (
-    <div className="grid grid-rows-1 grid-cols-4 text-center p-4 font-bold text-lg">
+    <div
+      className={`grid grid-cols-4 z-0 text-center p-4 pb-6 font-bold bg-black text-lg  ${
+        isSticky
+          ? "fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-sm shadow-md"
+          : "relative"
+      }`}
+    >
       <div>
         <Link href={"/"} className="flex-initial">
           Home

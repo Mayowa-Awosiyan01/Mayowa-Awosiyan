@@ -20,7 +20,6 @@ export default function Home() {
 
   const handleProjectSelect = (project: ProjectType) => {
     console.log(project.prompt.toString());
-    // Toggle project selection
     setSelectedProject((prevProject) =>
       prevProject?.prompt.toString() === project.prompt.toString()
         ? null
@@ -32,7 +31,7 @@ export default function Home() {
     {
       link: "https://raw.githubusercontent.com/Mayowa-Awosiyan01/Mayowa-Awosiyan/refs/heads/main/app/assets/nestSplitLogo.png",
       alt: "Testing stuff",
-      prompt: "Home Management App",
+      prompt: "Home Management Mobile Appllication",
       children: (
         <div>
           <h2 className="text-2xl font-bold mb-4">NestSplit Project Details</h2>
@@ -51,7 +50,7 @@ export default function Home() {
     {
       link: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Knapsack_Problem_Illustration.svg/250px-Knapsack_Problem_Illustration.svg.png",
       alt: "Image showing an example of the knapsack problem",
-      prompt: "AI Knapsack Problem",
+      prompt: "AI/ML Solution to the Knapsack Problem",
       children: (
         <div>
           <h2 className="text-2xl font-bold mb-4">
@@ -82,7 +81,7 @@ export default function Home() {
     {
       link: "https://raw.githubusercontent.com/Mayowa-Awosiyan01/Mayowa-Awosiyan/629d9319ecd4a8df73aa7b6e0e3dc77efb80b24e/app/assets/you-are-here-icon.svg",
       alt: "A you are here icon",
-      prompt: "My Website",
+      prompt: "This Website showcasing my skills",
       children: (
         <div>
           <h2 className="text-2xl font-bold mb-4">My Portfolio</h2>
@@ -125,7 +124,7 @@ export default function Home() {
     },
   ];
   return (
-    <div>
+    <div id="name">
       <ParticleBackground />
 
       <header className="text-4xl text-center font-bold p-8">
