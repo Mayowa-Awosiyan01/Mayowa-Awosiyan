@@ -135,15 +135,20 @@ export default function Home() {
       <div className="text-center gap-4 m-6">
         <h1 className="text-center font-bold text-2xl">About Me</h1>
         <p className="text-center p-8 px-12 text-lg">
-          My name is Mayowa Awosiyan, and I am a software developer. Welcome to
-          my portfolio, which is still currently a work in progress, but I hope
-          it gives you an idea of my skills. I am also working on a project I am
-          calling NestSplit, which you can read about here soon! When I am
-          taking a break from updating this portfolio or my projects, I am often
-          applying to jobs since I want a full-time software developer/engineer
-          role, recruiters, if you see this, feel free to help a guy out! I have
-          also recently been embracing my newfound love for roguelikes with
-          Hades or playing Marvel Rivals where I am sadly hard stuck platinum.
+          My name is Mayowa Awosiyan and I am a software developer experienced
+          with several technologies including Next.js, React, SQL, Python, and
+          more. I have gained valuable professional experience through
+          internships with multiple branches of the Government of Canada. As a
+          developer, I focus on writing clean, maintainable code and actively
+          designing solutions that bring tangible value to users. I am
+          passionate about creating intuitive, efficient applications that solve
+          real-world problems while adhering to best practices in software
+          development. Whether working on front-end interfaces or back-end
+          systems, I approach each project with curiosity and dedication to
+          continuous learning. I thrive in collaborative environments where I
+          can contribute my technical skills while learning from others. Feel
+          free to explore my projects below or reach out if you would like to
+          connect!
         </p>
         <h1 className="text-center text-2xl font-bold">Professional History</h1>
         <p className="text-center p-8 px-12 text-lg">
@@ -151,8 +156,7 @@ export default function Home() {
           degree in computer science in June 2024. During my degree, I did
           multiple co-ops as a software developer with different departments in
           the Government of Canada and one co-op as a software developer for the
-          University of Ottawa working under a professor. For more details check
-          my resume in the navigation bar.
+          University of Ottawa working under a professor.
         </p>
         <h1 className="text-center text-2xl font-bold">
           Technologies and Skills
