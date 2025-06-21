@@ -14,7 +14,7 @@ The Matrix themed animated background of the website was made using the tsPartic
 
 ---
 
-I now have a hero section component to act as a welcome page for visitors with a simple animation for the button. I also updated my resume based on the feedback of a recruiter I spoke to recently.
+I no longer enjoy how this portfolio looks so I will be changing basically everything about it.
 
 ### Future Updates
 
