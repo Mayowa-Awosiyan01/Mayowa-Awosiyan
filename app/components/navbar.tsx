@@ -53,7 +53,7 @@ export default function NavBar() {
       </div>
       <div className="hover:bg-white hover:text-black transition-colors rounded-xl">
         <Link
-          className="flex-initial "
+          className="flex-initial"
           href={"https://github.com/Mayowa-Awosiyan01"}
         >
           GitHub
