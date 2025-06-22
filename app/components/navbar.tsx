@@ -28,35 +28,32 @@ export default function NavBar() {
           : "relative"
       }`}
     >
-      <div>
-        <Link
-          href={"/"}
-          className="flex-initial hover:text-gray-300 transition-colors"
-        >
+      <div className="hover:bg-white hover:text-black transition-colors rounded-xl">
+        <Link href={"/"} className="flex-initial">
           Home
         </Link>
       </div>
-      <div>
+      <div className="hover:bg-white hover:text-black transition-colors rounded-xl">
         <a
           href={"/Resume.pdf"}
           target="_blank"
-          className="flex-initial hover:text-gray-300 hover:bg-white transition-colors"
+          className="flex-initial"
           rel="noopener noreferrer"
         >
           Resume
         </a>
       </div>
-      <div>
+      <div className="hover:bg-white hover:text-black transition-colors rounded-xl">
         <Link
-          className="flex-initial hover:text-gray-300 transition-colors"
+          className="flex-initial"
           href={"https://www.linkedin.com/in/mayowa-awosiyan/"}
         >
           LinkedIn
         </Link>
       </div>
-      <div>
+      <div className="hover:bg-white hover:text-black transition-colors rounded-xl">
         <Link
-          className="flex-initial hover:text-gray-300 transition-colors"
+          className="flex-initial "
           href={"https://github.com/Mayowa-Awosiyan01"}
         >
           GitHub
