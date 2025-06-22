@@ -8,18 +8,20 @@ export default function NavBar() {
 
   useEffect(() => {
     const handleScrolling = () => {
-      const windowHeight = window.innerHeight;
-      if (window.scrollY > windowHeight) {
+      if (window.scrollY > 15) {
         setSticky(true);
       } else {
         setSticky(false);
       }
     };
     window.addEventListener("scroll", handleScrolling);
-  });
+    return () => {
+      window.removeEventListener("scroll", handleScrolling);
+    };
+  }, []);
 
   return (
-    <div
+    <nav
       className={`grid grid-cols-4 z-0 text-center p-4 pb-6 font-bold bg-black text-lg  ${
         isSticky
           ? "fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-sm shadow-md"
@@ -27,7 +29,10 @@ export default function NavBar() {
       }`}
     >
       <div>
-        <Link href={"/"} className="flex-initial">
+        <Link
+          href={"/"}
+          className="flex-initial hover:text-gray-300 transition-colors"
+        >
           Home
         </Link>
       </div>
@@ -35,7 +40,7 @@ export default function NavBar() {
         <a
           href={"/Resume.pdf"}
           target="_blank"
-          className="flex-initial"
+          className="flex-initial hover:text-gray-300 hover:bg-white transition-colors"
           rel="noopener noreferrer"
         >
           Resume
@@ -43,7 +48,7 @@ export default function NavBar() {
       </div>
       <div>
         <Link
-          className="flex-initial"
+          className="flex-initial hover:text-gray-300 transition-colors"
           href={"https://www.linkedin.com/in/mayowa-awosiyan/"}
         >
           LinkedIn
@@ -51,12 +56,12 @@ export default function NavBar() {
       </div>
       <div>
         <Link
-          className="flex-initial"
+          className="flex-initial hover:text-gray-300 transition-colors"
           href={"https://github.com/Mayowa-Awosiyan01"}
         >
           GitHub
         </Link>
       </div>
-    </div>
+    </nav>
   );
 }
