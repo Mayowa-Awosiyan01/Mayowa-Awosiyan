@@ -124,10 +124,10 @@ export default function Home() {
     },
   ];
   return (
-    <div id="name">
+    <div className="container">
       <ParticleBackground />
 
-      <header className="text-4xl text-center font-bold p-8">
+      <header id="name" className="text-4xl text-center font-bold p-8">
         Mayowa Awosiyan
       </header>
 
